@@ -11,7 +11,7 @@ COPY src/frontend /frontend
 
 RUN cd /frontend && npm install && npm run build
 
-################################
+############################
 # RUNTIME
 ################################
 FROM nginxinc/nginx-unprivileged:stable-bookworm-perl AS runtime
